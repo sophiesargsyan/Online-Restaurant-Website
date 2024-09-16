@@ -45,7 +45,7 @@
         //Get data
         $full_name = $_POST['full_name'];
         $username = $_POST['username'];
-        $password = md5($_POST['password']); // for hash password
+        $password = md5($_POST['password']); // for hash password, sra urish tarberakn el ka
 
         //Query for save database
         $sql = "INSERT INTO tbl_admin SET
@@ -54,13 +54,12 @@
             password = '$password'
         ";
 
-        //saving data into database
         $res = mysqli_query($conn, $sql) or die(mysqli_error());
 
         if($res==TRUE){
-            echo "data inserted";
+            // echo "data inserted";
         } else {
-            echo "failed insert data";
+            // echo "failed insert data";
         }
     };
 ?>
