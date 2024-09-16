@@ -57,7 +57,9 @@
         $res = mysqli_query($conn, $sql) or die(mysqli_error());
 
         if($res==TRUE){
-            // echo "data inserted";
+            $SESSION['add'] = "Success";
+            //connect to manage admine page
+            header("location:".SITEURL.'admin/manage-admin.php');
         } else {
             // echo "failed insert data";
         }

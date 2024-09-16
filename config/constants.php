@@ -1,5 +1,9 @@
 <?php 
+    //Session
+    session_start();
+
     //Constants
+    define('SITEURL', 'http://localhost/online-restaurant-project/');
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
